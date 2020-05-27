@@ -1,0 +1,41 @@
+.author {
+  background-color: white;
+  height: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author_name {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  margin: 24px 0 16px;
+  font-size: 14px;
+  color: #060A24;
+  line-height: 22px;
+}
+
+.author .icons {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.author .icons .fab {
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+/*# sourceMappingURL=author.css.map */

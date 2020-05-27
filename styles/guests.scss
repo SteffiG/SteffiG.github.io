@@ -1,0 +1,26 @@
+@import 'variables.scss';
+
+.guests {
+ // margin-top: 858px;
+    &_stellar {
+      font-family: $sans;
+      font-weight: 400;
+      font-size: 36px;
+      color: $fontcolor;
+      letter-spacing: 0;
+      line-height: 42px;
+      margin: 54px 16px 14px;
+    }
+  
+    .photos {
+      height: 243px;
+    }
+    .photos_1 {
+      height: 243px;
+      margin: 0;
+      width: 100%;
+    }
+    .photos_2, .photos_3, .photos_4, .photos_5, .photos_6 {
+      @extend .photos_1;
+    }
+  }

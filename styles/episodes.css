@@ -1,0 +1,58 @@
+.oblique_name {
+  display: none;
+}
+
+.oblique .skewed {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 1235.5px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  -webkit-transform-origin: bottom rigth;
+          transform-origin: bottom rigth;
+}
+
+.episodes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.episodes .name {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 64px 0 21px 16px;
+}
+
+.episodes .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 11px 48px 11px;
+}
+
+.episodes .play .player, .episodes .play .player2 {
+  width: 100%;
+  height: 236px;
+  margin-bottom: 11px;
+}
+
+.episodes .play .player-spotify, .episodes .play .player2-spotify {
+  width: 100%;
+  height: 232px;
+  border: 0;
+}
+/*# sourceMappingURL=episodes.css.map */

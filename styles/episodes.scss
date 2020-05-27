@@ -1,0 +1,45 @@
+@import 'variables.scss';
+
+.oblique {
+  &_name {
+    display: none;
+  }
+  .skewed {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1235.5px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    transform: skewY(-4deg);
+    transform-origin: bottom rigth;
+  }
+}
+
+.episodes {
+  display: flex;
+  flex-direction: column;
+  .name {
+    font-family: $sans;
+    color: white;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 64px 0 21px 16px;
+  }
+  .play {
+    display: flex;
+    flex-direction: column;
+//    align-items: center;
+    margin: 0 11px 48px 11px;
+    .player, .player2 {
+      width: 100%;
+      height: 236px;
+      margin-bottom: 11px;
+      &-spotify {
+        width: 100%;
+        height: 232px;
+        border: 0;
+      }  
+    }
+  }
+}

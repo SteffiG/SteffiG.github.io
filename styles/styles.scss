@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'header.scss';
+@import 'home.scss';
+@import 'episodes.scss';
+@import 'we.scss';
+@import 'guests.scss';
+@import 'themes.scss';
+@import 'news.scss';
+@import 'author.scss';
+@import 'media.scss';
+
+
+
+body {
+    margin: 0;
+    font-family: $mono;
+}
+
+

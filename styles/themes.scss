@@ -1,0 +1,41 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+.themes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  margin-bottom: 0;
+  &_some {
+    font-family: $sans;
+    font-size: 36px;
+    font-weight: 500;
+    color: $fontcolor;
+    line-height: 42px;
+    margin: 0 16px 37px;
+  }
+  .something {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_position {
+      align-self: center;
+      .themes_image-work {
+        display: flex;
+        margin: auto;
+      }
+      .themes_image {
+        display: flex;
+        margin: auto;
+      }
+      .themes_name {
+        margin: 13px 16px 65px;
+        @include data();
+      }
+      .themes_name-security {
+        margin-bottom: 42px;
+        @include data();
+      }
+    }
+  } 
+}

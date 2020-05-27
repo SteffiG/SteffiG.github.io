@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PodCast</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/7facdea3f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <picture class="logo">
+            <img class="logo_img" src="./images/logo.svg" alt="logo">
+        </picture>
+        <!--input type="checkbox" class="menuToggle" id="menuToggle">
+        <label for="menuToggle" class="iconToggle">
+            <div class="spinner part-1"></div>
+            <div class="spinner part-2"></div>
+            <div class="spinner part-3"></div>
+        </label>
+        <nav-- id="menu">
+            <ul class="menuInner">
+                <li class="menuInner_list1"><a href="#episodes" class="menuInner_link">EPISODIOS</a></li>
+                <li class="menuInner_list"><a href="#come" class="menuInner_link">NOSOTROS</a></li>
+                <li class="menuInner_list"><a href="#guests" class="menuInner_link">ENTREVISTAS</a></li>
+                <li class="menuInner_list4"><a href="#themes" class="menuInner_link">TÓPICOS</a></li>
+            </ul>
+        </nav-->
+
+        <nav class="menu">
+            <input class="menuToggle" type="checkbox" name="menuToggle" id="menuToggle">
+            <span class="spinner"></span>
+            <span class="spinner"></span>
+            <span class="spinner"></span>
+            <ul class="menuInner">
+                <li><a href="#episodes" class="menuInner_link">EPISODIOS</a></li>
+                <li><a href="#come" class="menuInner_link">NOSOTROS</a></li>
+                <li><a href="#guests" class="menuInner_link">ENTREVISTAS</a></li>
+                <li><a href="#themes" class="menuInner_link">TÓPICOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <h1 class="title">Hello <span class="decoration">world</span> pale blue dot.</h1>
+            <p class="paragraph">
+                Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+            </p>
+            <p class="paragraph-desktop">
+                El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves casa 15 días.
+            </p>
+            <a role="button" class="btn" href="#episodes">CONOCÉ MÁS</a>
+        </section>
+        <section class="oblique">
+            <h6 class="oblique_name">oblique</h6>
+            <div class="skewed"></div>
+            <section class="episodes">
+                <h2 id="episodes" class="name">Episodios</h2>            
+                <div class="play">
+                    <div class="player">
+                        <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="player2">
+                        <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/2Hn8oHQ3EgVTtg8ysqfZco" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="player">
+                        <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="player2">
+                        <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="come" class="we">
+            <img class="telephone" src="./images/phone.png" alt="Image: The Secret History of Women in Coding">
+            <div class="we_div">
+                <h2 class="we_come">De dónde venimos</h2>
+                <p class="we_paragraph">
+                    Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br><br>
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </div>    
+        </section>
+        <section id="guests" class="guests">
+            <h2 class="guests_stellar">Invitadas/os estelares</h2>
+            <div class="images">
+                <div class="photos">
+                    <img class="photos_1" src="./images/grace-hopper.png" alt="">
+                </div>
+                <div class="photos">
+                    <img class="photos_2" src="./images/Katie-Bouman.png" alt="">
+                </div>
+                <div class="photos">
+                    <img class="photos_3" src="./images/Margaret_Hamilton.png" alt="">
+                </div>
+                <div class="photos">
+                    <img class="photos_4" src="./images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="">
+                </div>
+                <div class="photos">
+                    <img class="photos_5" src="./images/Computer_operators_with_an_Eniac—the_world’s_first_programmable_general-purpose_computer.png" alt="">
+                </div>
+                <div class="photos">
+                    <img class="photos_6" src="./images/susan-kare.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="themes" class="themes">
+            <h2 class="themes_some">Algunos de nuestros temas</h2>
+            <div class="something">
+                <div class="something_position">
+                    <img class="themes_image-work" src="./images/icon1.svg" alt="">
+                    <h3 class="themes_name">Trabajo remoto</h3>
+                </div>
+                <div class="something_position">
+                    <img class="themes_image" src="./images/icon2.svg" alt="">
+                    <h3 class="themes_name">Repensando la programación</h3>
+                </div>
+                <div class="something_position">
+                    <img class="themes_image" src="./images/icon3.svg" alt="">
+                    <h3 class="themes_name">Bases del código</h3>
+                </div>
+                <div class="something_position">
+                    <img class="themes_image" src="./images/icon4.svg" alt="">
+                    <h3 class="themes_name-security">Seguridad informática</h3>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="news">
+            <h2 class="news_title">¿Querés las últimas novedades?</h2>
+            <a role="button" class="btn" href="#episodes">ESCUCHÁ LOS EPISODIOS</a>
+        </section>
+    </main>
+    <footer class="author">
+        <h5 class="author_name">© 2019 - Hello blue pale dot</h5>
+        <div class="icons">
+            <i class="fab fa-spotify"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.themes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+.themes_some {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #060A24;
+  line-height: 42px;
+  margin: 0 16px 37px;
+}
+
+.themes .something {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.themes .something_position {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.themes .something_position .themes_image-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.themes .something_position .themes_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.themes .something_position .themes_name {
+  margin: 13px 16px 65px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #060A24;
+  text-align: center;
+}
+
+.themes .something_position .themes_name-security {
+  margin-bottom: 42px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #060A24;
+  text-align: center;
+}
+/*# sourceMappingURL=themes.css.map */

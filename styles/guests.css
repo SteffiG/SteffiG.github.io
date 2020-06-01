@@ -8,11 +8,11 @@
   margin: 54px 16px 14px;
 }
 
-.guests .photos {
+.guests .images .photos {
   height: 243px;
 }
 
-.guests .photos_1, .guests .photos_2, .guests .photos_3, .guests .photos_4, .guests .photos_5, .guests .photos_6 {
+.guests .images .photos_1, .guests .images .photos_2, .guests .images .photos_3, .guests .images .photos_4, .guests .images .photos_5, .guests .images .photos_6 {
   height: 243px;
   margin: 0;
   width: 100%;

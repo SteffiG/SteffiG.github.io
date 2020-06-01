@@ -38,14 +38,7 @@
       align-self: center;
 }
 
-.themes .something_position .themes_image-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-}
-
-.themes .something_position .themes_image {
+.themes .something_position .themes_image, .themes .something_position .themes_image-work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

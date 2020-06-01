@@ -12,37 +12,24 @@
         <picture class="logo">
             <img class="logo_img" src="./images/logo.svg" alt="logo">
         </picture>
-        <!--input type="checkbox" class="menuToggle" id="menuToggle">
-        <label for="menuToggle" class="iconToggle">
-            <div class="spinner part-1"></div>
-            <div class="spinner part-2"></div>
-            <div class="spinner part-3"></div>
-        </label>
-        <nav-- id="menu">
-            <ul class="menuInner">
-                <li class="menuInner_list1"><a href="#episodes" class="menuInner_link">EPISODIOS</a></li>
-                <li class="menuInner_list"><a href="#come" class="menuInner_link">NOSOTROS</a></li>
-                <li class="menuInner_list"><a href="#guests" class="menuInner_link">ENTREVISTAS</a></li>
-                <li class="menuInner_list4"><a href="#themes" class="menuInner_link">TÓPICOS</a></li>
-            </ul>
-        </nav-->
-
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <div class="menuToggle"> 
+            <label class="iconToggle" for="checkbox">
+                <span class="line"></span>
+            </label>
+        </div>
         <nav class="menu">
-            <input class="menuToggle" type="checkbox" name="menuToggle" id="menuToggle">
-            <span class="spinner"></span>
-            <span class="spinner"></span>
-            <span class="spinner"></span>
             <ul class="menuInner">
-                <li><a href="#episodes" class="menuInner_link">EPISODIOS</a></li>
-                <li><a href="#come" class="menuInner_link">NOSOTROS</a></li>
-                <li><a href="#guests" class="menuInner_link">ENTREVISTAS</a></li>
-                <li><a href="#themes" class="menuInner_link">TÓPICOS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#episodes">EPISODIOS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#come">NOSOTROS</a></li>
+                <li class="menuInner_list"> <a class="menuInner_link" href="#guests">ENTREVISTAS</a></li>
+                <li class="menuInner_list4"> <a class="menuInner_link" href="#themes">TÓPICOS</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home" class="container">
-            <h1 class="title">Hello <span class="decoration">world</span> pale blue dot.</h1>
+            <h1 class="title">Hello <span class="decoration">world</span> pale blue dot<span class="dot">.</span></h1>
             <p class="paragraph">
                 Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
             </p>
@@ -54,8 +41,8 @@
         <section class="oblique">
             <h6 class="oblique_name">oblique</h6>
             <div class="skewed"></div>
-            <section class="episodes">
-                <h2 id="episodes" class="name">Episodios</h2>            
+            <section id="episodes" class="episodes">
+                <h2 class="name">Episodios</h2>            
                 <div class="play">
                     <div class="player">
                         <iframe class="player-spotify" src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>
@@ -86,22 +73,22 @@
             <h2 class="guests_stellar">Invitadas/os estelares</h2>
             <div class="images">
                 <div class="photos">
-                    <img class="photos_1" src="./images/grace-hopper.png" alt="">
+                    <img class="photos_1" src="./images/grace-hopper.png" alt="Grace Hopper">
                 </div>
                 <div class="photos">
-                    <img class="photos_2" src="./images/Katie-Bouman.png" alt="">
+                    <img class="photos_2" src="./images/Katie-Bouman.png" alt="Katie Bouman">
                 </div>
                 <div class="photos">
-                    <img class="photos_3" src="./images/Margaret_Hamilton.png" alt="">
+                    <img class="photos_3" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton">
                 </div>
                 <div class="photos">
-                    <img class="photos_4" src="./images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="">
+                    <img class="photos_4" src="./images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Univac 1103">
                 </div>
                 <div class="photos">
-                    <img class="photos_5" src="./images/Computer_operators_with_an_Eniac—the_world’s_first_programmable_general-purpose_computer.png" alt="">
+                    <img class="photos_5" src="./images/Computer_operators_with_an_Eniac—the_world’s_first_programmable_general-purpose_computer.png" alt="The world’s first programmable general purpose computer">
                 </div>
                 <div class="photos">
-                    <img class="photos_6" src="./images/susan-kare.png" alt="">
+                    <img class="photos_6" src="./images/susan-kare.png" alt="Susan kare">
                 </div>
             </div>
         </section>
@@ -109,19 +96,19 @@
             <h2 class="themes_some">Algunos de nuestros temas</h2>
             <div class="something">
                 <div class="something_position">
-                    <img class="themes_image-work" src="./images/icon1.svg" alt="">
+                    <img class="themes_image-work" src="./images/icon1.svg" alt="Trabajo remoto">
                     <h3 class="themes_name">Trabajo remoto</h3>
                 </div>
                 <div class="something_position">
-                    <img class="themes_image" src="./images/icon2.svg" alt="">
+                    <img class="themes_image" src="./images/icon2.svg" alt="Repensando la programación">
                     <h3 class="themes_name">Repensando la programación</h3>
                 </div>
                 <div class="something_position">
-                    <img class="themes_image" src="./images/icon3.svg" alt="">
+                    <img class="themes_image" src="./images/icon3.svg" alt="Bases del código">
                     <h3 class="themes_name">Bases del código</h3>
                 </div>
                 <div class="something_position">
-                    <img class="themes_image" src="./images/icon4.svg" alt="">
+                    <img class="themes_image" src="./images/icon4.svg" alt="Seguridad informática">
                     <h3 class="themes_name-security">Seguridad informática</h3>
                 </div>
             </div>
@@ -134,11 +121,11 @@
     <footer class="author">
         <h5 class="author_name">© 2019 - Hello blue pale dot</h5>
         <div class="icons">
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a href="https://www.spotify.com" target="blanck"><i class="fab fa-spotify"></i></a> 
+            <a href="https://www.instagram.com" target="blanck"><i class="fab fa-instagram"></i></a> 
+            <a href="https://twitter.com" target="blanck"><i class="fab fa-twitter"></i></a> 
+            <a href="https://www.facebook.com" target="blanck"><i class="fab fa-facebook"></i></a> 
+            <a href="https://web.telegram.org" target="blanck"><i class="fab fa-telegram"></i></a> 
         </div>
     </footer>
 </body>

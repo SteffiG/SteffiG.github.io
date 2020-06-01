@@ -20,11 +20,7 @@
     align-items: center;
     &_position {
       align-self: center;
-      .themes_image-work {
-        display: flex;
-        margin: auto;
-      }
-      .themes_image {
+      .themes_image, .themes_image-work {
         display: flex;
         margin: auto;
       }

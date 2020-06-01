@@ -1,36 +1,31 @@
 @import 'variables.scss';
-/*
-.tlf {
-  margin: 0;
-  .telephone {
-    position: absolute;
-    top: 1499px;
-    width: 100%;
-    height: 519px;
-  }
-}*/
 
 .we {
-  //position: absolute;
-  //top: 1499px;
   margin: 0 16px 16px 16px;
   color: $fontcolor;
   .telephone {
     width: 100%;
     height: 519px;
   }
-  &_come {
-    font-size: 36px;
-    margin-top: 27px;
-    margin-bottom: 8px;
-    font-family: $sans;
-    font-weight: 400;
-    line-height: 42px;
-  }
-  &_paragraph {
-    font-family: $mono;
-    font-size: 14px;
-    line-height: 22px;
+  &_div {
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    .we_come {
+      font-size: 36px;
+      margin-top: 27px;
+      margin-bottom: 8px;
+      font-family: $sans;
+      font-weight: 400;
+      line-height: 42px;
+    }
+    .we_paragraph {
+      font-family: $mono;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22px;
+      margin: 0;
+    }
   }
 }

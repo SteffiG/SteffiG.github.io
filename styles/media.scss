@@ -4,19 +4,14 @@
 @media screen and (min-width: 768px) {
   .header {
     height: 80px;
-    display: flex;
   }
   
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    .logo_img {
-      width: 36px;
-      height: 36px;
-      padding: 22px 0 22px 50px;
-    }
+  .logo_img {
+    width: 36px;
+    height: 36px;
+    padding: 22px 0 22px 50px;
   }
-    
+
   @include menu();
 
   .container {
@@ -33,12 +28,16 @@
     .decoration::after {
       display: none;
     }
+    .dot {
+      color:  #0000EC;
+    }
     .paragraph {
       display: none;
       &-desktop {
         display: block;
         font-family: $mono;
         font-size: 16px;
+        font-weight: 300;
         color: $fontcolor;
         line-height: 24px;
         margin: 0;
@@ -50,7 +49,6 @@
       padding: 16px 59px;
       font-size: 18px;
       line-height: 24px;
-      font-weight: 500;
     }
   }
 
@@ -61,7 +59,6 @@
   }
     
   .episodes {
-
     .name {
       margin-top: 0;
       padding: 64px 0 26px 50px;
@@ -78,11 +75,6 @@
         width: 350px;
         height: 232px;
         margin: 26px 15px 64px;
-        &-spotify {
-          width: 100%;
-          height: 232px;
-          border: 0;
-        }
       }
     }
   }
@@ -91,9 +83,7 @@
   .we {
     margin: 0 0 50px 50px;
     display: flex;
-    flex-flow: row wrap;
     .telephone {
-      align-self: flex-start;
       margin: 0;
       width: 400px;
       height: 660px;
@@ -104,29 +94,23 @@
       flex-direction: column;
       width: 288px;
       .we_come {
-      //  font-family: $sans;
         font-size: 48px;
-      //  color: $fontcolor;
         margin-bottom: 24px;
       }
       .we_paragraph {
         width: 288px;
-      //  font-family: $mono;
         font-size: 16px;
-      //  color: $fontcolor;
         line-height: 24px;
       }
     }
   }
   
- .guests {
+  .guests {
     margin: 0;
     display: flex;
     flex-flow: column wrap;
     &_stellar {
-      font-family: $sans;
       font-size: 48px;
-      color: $fontcolor;
       margin: 0 0 36px 50px;
     }
     .images {
@@ -143,7 +127,6 @@
   }
 
   .themes {
-    display: flex;
     margin: 64px 0 0 50px;
     &_some {
       margin-bottom: 69px;
@@ -160,364 +143,117 @@
       }
       .themes_name, .themes_name-security {
         width: 220px;
-        align-self: center; 
-        text-align: center;
+        align-self: center;
         line-height: 32px;
         margin-top: 29px;
         margin-bottom: 34px;
-      }
-      .themes_image, .themes_image-work {
-        display: flex;
-        margin: auto;
       }
     }
   }
 
   .news {
     height: 400px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    color: white;
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
     &_title {
-      font-family: $sans;
-      font-weight: 100;
       margin: 150px 16px 36px;
-      color: white;
-      text-align: center;
-      line-height: 42px;
       font-size: 48px;
     }
     .btn {
-    //  text-decoration: none;
-    //  background-color: $color;
-    //  margin-bottom: 67px;
       padding: 16px 59px;
-    //  font-family: $mono;
-    //  font-weight: 500;
-    //  color: $fontcolor;
       font-size: 18px;
-    //  text-align: center;
       line-height: 24px;
     }
   }
 
   .author {
-    background-color: white;
-    height: 121px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     &_name {
-      font-family: $mono;
-      margin: 0;
-      padding: 24px 0 16px 0;
-      color: $fontcolor;
       font-size: 16px;
-      line-height: 22px;
-    }
-    .icons {
-      width: 230px;
-      display: flex;
-      justify-content: space-between;
-      margin: 0;
-      padding-bottom: 31px;
-      .fab {
-        font-size: 16px;
-        color: $fontcolor;
-        line-height: 28px;
-      }
     }
   }
 }
 
-
 @media screen and (min-width: 1024px) {
-  .header {
-    height: 80px;
-    display: flex;
+
+  .logo_img {
+    padding-left: 100px;
   }
-  
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    .logo_img {
-      width: 36px;
-      height: 36px;
-      padding: 22px 0 22px 100px;
-    }
-  }
-    
+      
   @include menu();
 
   .container {
-    margin: 0 0 5px 200px;
-    height: 355px;
-    padding: 0;
-    .title {
-      font-size: 50px;
-      line-height: 84px;
-      margin: 0;
-      padding: 0;
-      padding-top: 50px;
-    }
-    .decoration::after {
-      display: none;
-    }
-    .paragraph {
-      display: none;
-      &-desktop {
-        display: block;
-        font-family: $mono;
-        font-size: 16px;
-        color: $fontcolor;
-        line-height: 24px;
-        margin: 0;
-        margin-bottom: 56px;
-        width: 628px;
-      }
-    }
-    .btn {
-      padding: 16px 59px;
-      font-size: 18px;
-      line-height: 24px;
-      font-weight: 500;
-    }
-  }
-
-  .oblique {
-    .skewed {
-      height: 900px;
-    }
+    margin-left: 200px;
   }
     
   .episodes {
-
-    .name {
-      margin-top: 0;
-      padding: 64px 0 26px 50px;
-      font-family: $sans;
-      font-size: 48px;
-      color: white;
-    }
     .play {
-      margin: 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
       .player, .player2 {  
         width: 480px;
-        height: 232px;
-        margin: 26px 15px 64px;
-        &-spotify {
-          width: 100%;
-          height: 232px;
-          border: 0;
-        }
-      }
-    }
+      } 
+    }  
   }
    
-    
   .we {
-    margin: 0 0 50px 50px;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     .telephone {
-      align-self: flex-start;
       margin-right: 62.4px;
       width: 457.6px;
       height: 660px;
     }
     &_div {
       margin-top: 189px;
-      display: flex;
-      flex-direction: column;
-      width: 288px;
-      .we_come {
-      //  font-family: $sans;
-        font-size: 48px;
-      //  color: $fontcolor;
-        margin-bottom: 24px;
-      }
-      .we_paragraph {
-        width: 288px;
-      //  font-family: $mono;
-        font-size: 16px;
-      //  color: $fontcolor;
-        line-height: 24px;
-      }
     }
   }
   
- .guests {
-    margin: 0;
-    display: flex;
-    flex-flow: column wrap;
-    &_stellar {
-      font-family: $sans;
-      font-size: 48px;
-      color: $fontcolor;
-      margin: 0 0 36px 50px;
-    }
-    .images {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      .photos {
-        width: calc(100vw/3);
-        &_1, &_2, &_3, &_4, &_5, &_6 {
-          width: 100%;
-        }
-      }
+  .guests {
+    .photos {
+      width: calc(100vw/3);
     }
   }
 
   .themes {
-    display: flex;
-    margin: 64px 0 0 50px;
-    &_some {
-      margin-bottom: 69px;
-      font-size: 48px;
-    }
-    .something {
-      width: 100%;
-      margin: 0;
-      display: flex;
-      flex-flow: row wrap;
-   //   justify-content: space-around;
       &_position {
-        height: 210px;
         width:243px;
       }
-      .themes_name, .themes_name-security {
-        width: 220px;
-        align-self: center; 
-        text-align: center;
-        line-height: 32px;
-        margin-top: 29px;
-        margin-bottom: 34px;
-      }
-      .themes_image, .themes_image-work {
-        display: flex;
-        margin: auto;
-      }
-    }
   }
 
   .news {
-    height: 400px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    color: white;
-    &_title {
-      font-family: $sans;
-      font-weight: 100;
-      margin: 150px 16px 36px;
-      color: white;
-      text-align: center;
-      line-height: 42px;
-      font-size: 48px;
-    }
     .btn {
-    //  text-decoration: none;
-    //  background-color: $color;
-    //  margin-bottom: 67px;
       padding: 19px 59px;
-    //  font-family: $mono;
-    //  font-weight: 500;
-    //  color: $fontcolor;
-    //  font-size: 18px;
-    //  text-align: center;
-    //  line-height: 24px;
     }
   }
 
   .author {
-    background-color: white;
     height: 95px;
-    margin: 0;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     &_name {
-      font-family: $mono;
       margin: 0;
       padding: 36px 0 31px 100px;
-      color: $fontcolor;
-      font-size: 16px;
       line-height: 28px;
     }
     .icons {
-      width: 230px;
-      display: flex;
-      justify-content: space-between;
-      margin: 0;
       padding: 36px 100px 31px 0;
-      .fab {
-        font-size: 16px;
-        color: $fontcolor;
-        line-height: 28px;
-      }
     }
   }
 }
 
 
-
-    
 @media screen and (min-width: 1440px) {
-  .header {
-    height: 80px;
-    display: flex;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: flex-start;
-    .logo_img {
-      width: 36px;
-      height: 36px;
-      padding: 22px 0 22px 100px;
-    }
-  }
-
+  
   @include menu();
 
   .container {
-    margin: 0 0 5px 200px;
     height: 379px;
-    padding: 0;
     .title {
       font-size: 64px;
-      line-height: 84px;
-      padding: 0;
       padding-top: 120px;
     }
     .decoration::after {
       display: none;
     }
-    .paragraph {
-      display: none;
-      &-desktop {
-        display: block;
-        font-family: $mono;
-        font-size: 16px;
-        color: $fontcolor;
-        line-height: 24px;
-        margin-bottom: 72px;
-        width: 628px;
-      }
+    .paragraph-desktop {
+      margin-bottom: 72px;
     }
     .btn {
       padding: 16px 59px;
@@ -535,24 +271,16 @@
   }
     
   .episodes {
-    display: flex;
     .name {
       margin: 0;
       padding: 186px 0 26px 200px;
-      font-family: $sans;
-      font-size: 48px;
       line-height: 62px;
-      color: white;
     }
     .play {
-      display: flex;
-      flex-flow: row wrap;
       justify-content: space-between;
       margin: 0 100px 64px 100px;
       .player {  
-        display: flex;
         width: 584px;
-        height: 232px;
         margin: 0 72px 72px 0;
         &-spotify {
           width: 584px;
@@ -561,9 +289,7 @@
         } 
       }
       .player2 {
-        display: flex;
         width: 584px;
-        height: 232px;
         margin: 0 0 72px 0;
         &-spotify {
           width: 584px;
@@ -576,57 +302,29 @@
    
   .we {
     margin: 0 50px 64px 200px;
-    display: flex;
     flex-direction: row;
-    .telephone {
-      align-self: flex-start;
-      margin: 0;
-      width: 457.6px;
-      height: 660px;
-    }
     &_div {
-     // margin-left: 62.4px;
-      //margin-top: 189px;
-      //display: flex;
-     // flex-direction: column;
       width: 464px;
       .we_come {
-      //  font-family: $sans;
-        font-size: 48px;
-      //  color: $fontcolor;
         margin: 0;
-        margin-bottom: 24px;
         line-height: 62px;
       }
       .we_paragraph {
         width: 464px;
-      //  font-family: $mono;
-        font-size: 16px;
-      //  color: $fontcolor;
-        line-height: 24px;
       }
     }
   }
   
  .guests {
-    margin: 0;
-    display: flex;
-    flex-flow: column wrap;
     &_stellar {
-      font-family: $sans;
-      font-size: 48px;
       line-height: 62px;
-      color: $fontcolor;
       margin: 0 0 36px 200px;
     }
     .images {
-      display: flex;
-      flex-flow: row wrap;
       .photos {
         width: 480px;
         height: 364px;
         &_1, &_2, &_3, &_4, &_5, &_6 {
-          width: 480px;
           height: 364px;
         }
       }
@@ -634,97 +332,30 @@
   }
 
   .themes {
-    display: flex;
     margin: 64px 200px 34px 200px;
     &_some {
-      margin-bottom: 69px;
       margin-left: 50px;
-      font-size: 48px;
       line-height: 62px;
     }
     .something {
-      width: 100%;
-      display: flex;
-      flex-flow: row wrap;
       justify-content: center;
-      align-items: center;
       margin: 0;
       &_position {
-        align-content: baseline;
         height: 199px;
-        .themes_name, .themes_name-security {
-          width: 220px;
-          align-self: center; 
-          line-height: 32px;
-          margin-top: 29px;
-          margin-bottom: 34px;
-        }
-        .themes_image, .themes_image-work {
-          display: flex;
-          margin: auto;
-        }
       }
     }
   }
 
   .news {
     height: 518px;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    color: white;
     &_title {
-      font-family: $sans;
-      font-weight: 100;
       margin: 213px 0 52px 0;
-      color: white;
-      text-align: center;
-      line-height: 42px;
-      font-size: 48px;
-    }
-    .btn {
-    //  text-decoration: none;
-    //  background-color: $color;
-      margin-bottom: 151px;
-      padding: 19px 59px;
-    //  font-family: $mono;
-    //  font-weight: 500;
-    //  color: $fontcolor;
-    //  font-size: 18px;
-    //  text-align: center;
-    //  line-height: 24px;
     }
   }
 
   .author {
-    height: 95px;
-    margin: 0 100px 0;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     &_name {
-    //  font-family: $mono;
-      //font-weight: 400;
-     // margin: 24px 0 16px;
-    //  color: $fontcolor;
-      margin: 36px 0 31px;
-      font-size: 16px;
-      line-height: 28px;
-    }
-    .icons {
-      width: 230px;
-      display: flex;
-      justify-content: space-between;
-      margin: 36px 0 31px;
-      .fab {
-        font-size: 16px;
-        color: $fontcolor;
-        line-height: 28px;
-      }
+      margin: 0;
     }
   }
 }

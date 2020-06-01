@@ -12,48 +12,46 @@
 }
 
 @mixin menu() {
-  .menuToggle, .iconToggle, .spinner, .par-1, .part-2, .part-3 {
+  .menuToggle, 
+  .iconToggle, 
+  .iconToggle::before, 
+  .iconToggle::after,
+  .line {
     display: none;
   }
   
-  #menu {
+  .menuInner {
     position: static;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    transform: none;
+    transition: none;
     height: 80px;
     background-color: white;
     font-family: $mono;
-  }
-  
-  .menuInner {
-    //font-size: 16px;
     display: flex;
-    margin: 26px 100px 26px 0;
-    padding-top: 0;
-    &_list1, &_list {
+    margin: 0;
+    padding: 26px 0 0 0;
+    &_list {
       margin: 0 48px 0 0;
       display: inline;
-     // list-style: none;
     }
     &_list4 {
-      margin: 0;
+      margin: 0 100px 0 0;
       display: inline;
-     // list-style: none;
     }
     &_link {
+      line-height: 28px;
       color: $fontcolor;
-     // cursor: pointer;
-     // text-decoration: none;
-      height: 28px;
-      .menuInner_link:hover {
-        font-family: $mono;
-        font-size: 16px;
-        color: #00F3BB;
-        letter-spacing: 0;
-        line-height: 28px;
-      }
     }
+    &_link:hover {
+      color: #00F3BB;
+      text-decoration: line-through; 
+    }
+    &_link:active {
+      color: rgba(6,10,36,0.56);
+      text-decoration: line-through;
+    } 
   }
 }
 

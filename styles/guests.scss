@@ -1,17 +1,16 @@
 @import 'variables.scss';
 
 .guests {
- // margin-top: 858px;
-    &_stellar {
-      font-family: $sans;
-      font-weight: 400;
-      font-size: 36px;
-      color: $fontcolor;
-      letter-spacing: 0;
-      line-height: 42px;
-      margin: 54px 16px 14px;
-    }
-  
+  &_stellar {
+    font-family: $sans;
+    font-weight: 400;
+    font-size: 36px;
+    color: $fontcolor;
+    letter-spacing: 0;
+    line-height: 42px;
+    margin: 54px 16px 14px;
+  }
+  .images {
     .photos {
       height: 243px;
     }
@@ -24,3 +23,4 @@
       @extend .photos_1;
     }
   }
+}  

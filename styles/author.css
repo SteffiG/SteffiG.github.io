@@ -15,7 +15,7 @@
 
 .author_name {
   font-family: "IBM Plex Mono", monospace;
-  font-weight: 400;
+  font-weight: 300;
   margin: 24px 0 16px;
   font-size: 14px;
   color: #060A24;
@@ -35,7 +35,6 @@
 .author .icons .fab {
   font-size: 16px;
   color: #060A24;
-  letter-spacing: 0;
   line-height: 28px;
 }
 /*# sourceMappingURL=author.css.map */

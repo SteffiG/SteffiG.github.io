@@ -1,13 +1,3 @@
-/*
-.tlf {
-  margin: 0;
-  .telephone {
-    position: absolute;
-    top: 1499px;
-    width: 100%;
-    height: 519px;
-  }
-}*/
 .we {
   margin: 0 16px 16px 16px;
   color: #060A24;
@@ -18,7 +8,19 @@
   height: 519px;
 }
 
-.we_come {
+.we_div {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.we_div .we_come {
   font-size: 36px;
   margin-top: 27px;
   margin-bottom: 8px;
@@ -27,9 +29,10 @@
   line-height: 42px;
 }
 
-.we_paragraph {
+.we_div .we_paragraph {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
+  font-weight: 300;
   line-height: 22px;
   margin: 0;
 }
